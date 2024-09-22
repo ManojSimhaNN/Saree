@@ -64,6 +64,25 @@ section {
     padding-right: 50px;
     height: auto; /* Full height of the viewport */
 }
+/* Center the logo container */
+.logo-container {
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center;     /* Vertical centering */
+    height: 100%;   
+    margin-top: 40px;        /* Adjust based on your needs */
+
+}
+
+/* Adjust the logo size */
+.logo {
+    width: 300px;   /* Adjust width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    padding: 10px;
+    border: 20px solid #bdbdbd;
+
+}
 
 .product-gallery {
     display: grid;
