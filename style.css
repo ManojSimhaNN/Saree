@@ -4,10 +4,10 @@
 }
 body{
     min-height: 100vh;
-    background: darkgray;
+    background: #7EACB5;
 }
 nav{
-    background: #bdbdbd;
+    background: #C96868;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 nav ul{
@@ -44,7 +44,7 @@ nav li:first-child{
     height: 100vh;
     width: 250px;
     z-index: 999;
-    background: #bdbdbd;
+    background: #C96868;
     display: none;
     flex-direction: column;
     align-items: flex-start;
@@ -79,7 +79,6 @@ section {
     width: 300px;   /* Adjust width */
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px;
-    padding: 10px;
     border: 20px solid #bdbdbd;
 
 }
@@ -98,7 +97,7 @@ section {
 .product {
     background-color: white;
     padding: 10px;
-    border: 20px solid #ddd;
+    border: 20px solid #bdbdbd;
     border-radius: 10px;
     width: 200px;
     height: 300px;
@@ -159,7 +158,7 @@ html {
     top: 50px;
     width: 1200px auto;
     height:  auto;
-    background: #bdbdbd;
+    background: #FFF4EA;
     margin-top: 50px;
   }
 
@@ -171,7 +170,7 @@ html {
     max-width: 400px ;
     height: auto;
     border-radius: 10px;
-    background: #bdbdbd;
+    background: #FADFA1;
     text-align: center;
     vertical-align: middle;
     text-decoration: underline;
@@ -238,7 +237,7 @@ html {
 }
 
 .bottom{
-    background: #bdbdbd;
+    background: #C96868;
     margin-top: 40px;
     height: 60px;
     text-align: center;
