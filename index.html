@@ -13,7 +13,7 @@
 <body>
     <nav>
         <ul class="sidebar">
-            <li onclick=hideSidebar()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li onclick=hideSidebar()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
             <li onclick=hideSidebar()><a href="#Home">Home</a></li>
             <li onclick=hideSidebar()><a href="#About">About</a></li>
             <li onclick=hideSidebar()><a href="#Products">Products</a></li>
@@ -27,7 +27,7 @@
             <li class="hideOnMobile"><a href="#About">About</a></li>
             <li class="hideOnMobile"><a href="#Products">Products</a></li>
             <li class="hideOnMobile"><a href="#Contact">Contact</a></li>
-            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             
         </ul>
     </nav>
@@ -35,11 +35,11 @@
     <!-- Home Section-->
      <section id="Home">
         <div class="logo-container">
-            <img src="logo.PNG" alt="Dhanush Silk and Sarees Logo" class="logo">
+            <img src="/images/logo.PNG" alt="Dhanush Silk and Sarees Logo" class="logo">
         </div>        
         <div class="text">
             <h3>ನೇರವಾಗಿ ಮಗ್ಗದ ಮನೆಯಿಂದ ಮದುವೆಯ ಮನೆವೆರೆಗೆ..</h3>
-            <h3>ನೇಕಾರರಿಂದ ನೇರ ಮಾರಟ</h3>
+            <h3>ನೇಕಾರರಿಂದ ನೇರ ಮಾರಾಟ</h3>
             <h3>Sarees for Every ನಾರಿ</h3>
         </div>
         <!-- Swiper Slider -->
@@ -102,60 +102,84 @@
 
          <div class="container">
             <div class="product-gallery">
-                <!-- First 4 Products -->
-                <div>
+                <!-- Display 4 Products Initially -->
+                <div class="product-container">
                     <div class="product">
-                        <img src="#" alt="Product 1">
+                        <img src="images/gadwal.jpg" alt="Gadwal Saree">
+                    </div>
+                    <div class="product-name">Gadwal Saree</div>
+                </div>
+                <div class="product-container">
+                    <div class="product">
+                        <img src="image2.jpg" alt="Pattu Saree">
+                    </div>
+                    <div class="product-name">Pattu Saree</div>
+                </div>
+                <div class="product-container">
+                    <div class="product">
+                        <img src="image3.jpg" alt="Fancy Saree">
+                    </div>
+                    <div class="product-name">Fancy Saree</div>
+                </div>
+                <div class="product-container">
+                    <div class="product">
+                        <img src="images/semikanchipuram.png" alt="Semi Kanchipuram Saree">
+                    </div>
+                    <div class="product-name">Semi Kanchipuram Saree</div>
+                </div>
+        
+                <!-- Hidden Products (Next 8) -->
+                <div class="product-container hidden">
+                    <div class="product">
+                        <img src="images/georgette.png" alt="Georgette Saree">
+                    </div>
+                    <div class="product-name">Georgette Saree</div>
+                </div>
+                <div class="product-container hidden">
+                    <div class="product">
+                        <img src="images/mysoresilk.jpg" alt="Mysore Silk Saree">
                     </div>
                     <div class="product-name">Mysore Silk Saree</div>
                 </div>
-                <div>
+                <div class="product-container hidden">
                     <div class="product">
-                        <img src="#" alt="Product 2">
-                    </div>
-                    <div class="product-name">Dharmavarm Saree</div>
-                </div>
-                <div>
-                    <div class="product">
-                        <img src="#" alt="Product 3">
-                    </div>
-                    <div class="product-name">Pochampally Saree</div>
-                </div>
-                <div>
-                    <div class="product">
-                        <img src="#" alt="Product 4">
+                        <img src="images/kanchipuram.jpg" alt="Kanchipuram Saree">
                     </div>
                     <div class="product-name">Kanchipuram Saree</div>
                 </div>
-        
-                <!-- Hidden Products -->
-                <div class="hidden">
+                <div class="product-container hidden">
                     <div class="product">
-                        <img src="#" alt="Product 5">
+                        <img src="image8.jpg" alt="Crepe Saree">
                     </div>
-                    <div class="product-name-hidden">Banarasi Saree</div>
+                    <div class="product-name">Crepe Saree</div>
                 </div>
-                <div class="hidden">
+                <div class="product-container hidden">
                     <div class="product">
-                        <img src="#" alt="Product 6">
+                        <img src="image9.jpg" alt="Chiffon Saree">
                     </div>
-                    <div class="product-name-hidden">Gadwal Saree</div>
+                    <div class="product-name">Chiffon Saree</div>
                 </div>
-                <div class="hidden">
+                <div class="product-container hidden">
                     <div class="product">
-                        <img src="#" alt="Product 7">
+                        <img src="images/satin.png" alt="Satin Saree">
                     </div>
-                    <div class="product-name-hidden-small">Pattu Saree</div>
+                    <div class="product-name">Satin Saree</div>
                 </div>
-                <div class="hidden">
+                <div class="product-container hidden">
                     <div class="product">
-                        <img src="#" alt="Product 8">
+                        <img src="images/pochampally.png" alt="Pochampally Saree">
                     </div>
-                    <div class="product-name-hidden-small">Fancy Saree</div>
+                    <div class="product-name">Pochampally Saree</div>
+                </div>
+                <div class="product-container hidden">
+                    <div class="product">
+                        <img src="images/" alt="Banarasi Saree">
+                    </div>
+                    <div class="product-name">Banarasi Saree</div>
                 </div>
             </div>
         
-          <center><button class="load-more-btn" onclick="showMoreProducts()">Load More Products</button></center>  
+          <center><button class="load-more-btn" onclick="showMoreProducts()"><i>Load More Products</i></button></center>  
         
          </div>
 
@@ -205,3 +229,4 @@
 
 </body>
 </html>
+

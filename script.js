@@ -28,13 +28,15 @@ const swiper = new Swiper('.swiper-container', {
 
 function showMoreProducts() {
     // Get all hidden products
-    var hiddenProducts = document.querySelectorAll('.hidden');
+    const hiddenProducts = document.querySelectorAll('.hidden');
 
-    // Loop through and display them
-    hiddenProducts.forEach(function(product) {
-        product.classList.remove('hidden');
-    });
+    // Show the next group of 4 hidden products
+    for (let i = 0; i < 4 && i < hiddenProducts.length; i++) {
+        hiddenProducts[i].classList.remove('hidden');
+    }
 
-    // Hide the load more button after products are shown
-    document.querySelector('.load-more-btn').style.display = 'none';
+    // Check if there are no more hidden products
+    if (hiddenProducts.length <= 4) {
+        document.querySelector('.load-more-btn').style.display = 'none';
+    }
 }
