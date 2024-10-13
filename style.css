@@ -127,6 +127,11 @@ section {
     font-size: 16px;
     font-weight: bold;
 }
+.product-price {
+    font-size: 16px;
+    color: #007bff;
+    margin-top: 5px;
+}
 .load-more-btn {
     background-color: #E9EFEC;
     color: black;
